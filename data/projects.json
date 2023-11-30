@@ -1,24 +1,6 @@
 [
   {
     "project_id": 1,
-    "project_name": "Necoco",
-    "project_description": "Social media app to post with the world",
-    "project_url_demo": "http://www.google.com",
-    "project_demo_status": false,
-    "project_url_github": "http://www.github.com",
-    "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1691617734/Frame_101_wmtlat.png"
-  },
-  {
-    "project_id": 2,
-    "project_name": "Necoco API",
-    "project_description": "API backend server for necoco frontend",
-    "project_url_demo": "http://www.google.com",
-    "project_demo_status": false,
-    "project_url_github": "https://github.com/SaulLudena/NecocoBackend",
-    "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1701051504/Frame_159_zg9fi5.png"
-  },
-  {
-    "project_id": 3,
     "project_name": "Shipunk",
     "project_description": "Wiki site of cyberpunk edgerunners",
     "project_url_demo": "https://shipunk.vercel.app",
@@ -27,12 +9,30 @@
     "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1691617734/Frame_103_daqlxd.png"
   },
   {
+    "project_id": 2,
+    "project_name": "Necoco",
+    "project_description": "Social media app to post with the world",
+    "project_url_demo": "http://www.google.com",
+    "project_demo_status": false,
+    "project_url_github": "https://github.com/SaulLudena/Necoco",
+    "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1691617734/Frame_101_wmtlat.png"
+  },
+  {
+    "project_id": 3,
+    "project_name": "NecocoAPI",
+    "project_description": "API backend server for necoco frontend",
+    "project_url_demo": "http://www.google.com",
+    "project_demo_status": false,
+    "project_url_github": "https://github.com/SaulLudena/NecocoBackend",
+    "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1701051504/Frame_159_zg9fi5.png"
+  },
+  {
     "project_id": 4,
-    "project_name": "PixelPulse ",
-    "project_description": "E-learning platform for a local school in Lima, Peru",
+    "project_name": "ChatBot",
+    "project_description": "A little chatbot to talk with",
     "project_demo_status": false,
     "project_url_demo": "http://www.google.com",
-    "project_url_github": "http://www.github.com",
-    "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1691617734/Frame_104_t5tcnq.png"
+    "project_url_github": "https://github.com/SaulLudena/chatbot",
+    "project_image": "https://res.cloudinary.com/dbtzbuew2/image/upload/v1701324877/Frame_160_vas7a6.png"
   }
 ]

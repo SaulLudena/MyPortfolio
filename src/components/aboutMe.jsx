@@ -66,7 +66,7 @@ export default function AboutMe() {
                     Versioning
                   </h1>
                   <p className="text-sm text-gray-200">
-                    Handling versioning using <strong>Git</strong> and
+                    Handling versioning using <strong>Git</strong> and{" "}
                     <strong>GitHub</strong>
                   </p>
                 </div>
