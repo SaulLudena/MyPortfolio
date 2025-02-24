@@ -1,15 +1,25 @@
 import ProjectItem from "../projects/projectItem";
+import Moshonku from "../../../public/moshonku.svg";
 export default function Projects() {
   return (
-    <div className="grid py-20 mt-20 text-white gap-28 ">
-      <div className="flex text-4xl">
-        <h1 className="font-medium max-lg:text-xl text-[#FF002E]">T</h1>
-        <h1 className="font-medium max-lg:text-xl">
-          ake a look to my state of the art projects
-        </h1>
+    <div className="grid py-20 mt-20 text-white gap-28  " id="Projects">
+      <div className="gap-10 grid">
+        <div className="flex text-5xl">
+          <h1 className="font-medium max-lg:text-xl text-[#00FFB2]">M</h1>
+          <h1 className="font-medium max-lg:text-xl">y work</h1>
+        </div>
+        <div>
+          <div className="grid gap-3 text-lg">
+            <h3 className="text-[#EEEEEE]">
+              Welcome to my digital lab, where code comes to life and ideas
+              transform into functional projects. From small experiments to big
+              developments, this is my world.
+            </h3>
+          </div>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-32 max-xl:grid-cols-1 max-lg:pb-20">
+      <div className="grid grid-cols-1 gap-32 max-xl:grid-cols-1 max-lg:pb-20 w-[70%] max-w-[1600px] m-auto">
         {projects.map((project) => (
           <ProjectItem key={project.project_id} project={project} />
         ))}
@@ -26,7 +36,7 @@ const projects = [
     project_demo_status: true,
     project_url_github: "https://github.com/SaulLudena/shipunk",
     project_image:
-      "https://res.cloudinary.com/dbtzbuew2/image/upload/v1691617734/Frame_103_daqlxd.png",
+      "https://res.cloudinary.com/dbtzbuew2/image/upload/v1691617734/Frame_101_wmtlat.png",
     project_tech_used: ["NextJS", "TailwindCss", "Vercel"],
   },
   {

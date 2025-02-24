@@ -11,8 +11,8 @@ export default function Sidenav() {
       <div>
         <ul className="flex items-center  bg-black border-2 border-black rounded-3xl text-[#EEEEEE] shadow-2xl-xl">
           <NavBarMenuItem route="/" label="Home" />
-          <NavBarMenuItem route="/" label="Experience" />
-          <NavBarMenuItem route="/" label="Portfolio" />
+          <NavBarMenuItem route="#Experience" label="Experience" />
+          <NavBarMenuItem route="#Projects" label="Portfolio" />
           <NavBarMenuItem route="/" label="About me" />
         </ul>
       </div>
