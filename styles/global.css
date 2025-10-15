@@ -13,7 +13,7 @@
 
 body {
   font-family: "product_sans", sans-serif;
-  background-color: #ebebeb;
+  background-color: #131313;
 }
 
 .product_sans {
@@ -21,4 +21,8 @@ body {
 }
 .product_sans_bold {
   font-family: "product_sans_bold", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
 }

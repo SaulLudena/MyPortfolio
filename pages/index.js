@@ -1,10 +1,11 @@
 import Head from "next/head";
-import NavBar from "../src/components/navbar/navbar";
-import Projects from "../src/components/projects/projects";
-import Contact from "../src/components/contact";
-import Presentation from "../src/components/presentation";
-import Experience from "../src/components/experience/experience";
 
+import Topnav from "../src/components/topnav";
+import Homeinfo from "../src/components/home";
+import Projects from "../src/components/projects/project";
+import WorkingExerience from "../src/components/workingExperience";
+import Contact from "../src/components/contact.jsx";
+import Misc from "../src/components/misc";
 export default function Home() {
   return (
     <>
@@ -14,14 +15,18 @@ export default function Home() {
         <meta name="author" content="Wilson Developer" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <div className="relative flex flex-col w-full">
-        <div className="max-w-[1600px] w-[80%]  m-auto ">
-          <NavBar />
-          <Presentation />
-          <Experience />
-          <Projects />
+      <div className="flex flex-col w-full ">
+        <div className="max-w-[1700px] w-[85%] m-auto max-lg:w-[90%]">
+          <Topnav />
+
+          <div className="grid grid-cols-12 mt-16 gap-x-20 gap-y-5 ">
+            <Homeinfo />
+            <Projects />
+            <WorkingExerience />
+            <Contact />
+            <Misc />
+          </div>
         </div>
-        <Contact />
       </div>
     </>
   );
