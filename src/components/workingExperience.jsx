@@ -1,5 +1,5 @@
 import React from "react";
-import { IoHome, IoSkull } from "react-icons/io5";
+import { IoSkull } from "react-icons/io5";
 
 export default function workingExperience() {
   return (
@@ -16,7 +16,7 @@ export default function workingExperience() {
       </div>
       <div className="py-4 ">
         <p className="pb-2 text-[#EDEDED]">+ Once upon a time</p>
-        <p className="text-zinc-400">
+        <p className="text-zinc-400 max-lg:text-sm">
           I was working in personal and bussiness projects where i learned a lot
           and i gave a strong end-to-end solutions, lemme explain
         </p>
@@ -48,11 +48,11 @@ export default function workingExperience() {
                   return (
                     <tr
                       key={index}
-                      className="transition-colors hover:bg-zinc-900"
+                      className="transition-colors hover:bg-zinc-900 "
                     >
                       {/* Role */}
-                      <td className="p-3 border-b border-r border-zinc-700 whitespace-nowrap">
-                        {item.year}
+                      <td className="p-3 border-b border-r border-zinc-700 whitespace-nowrap ">
+                        {item.role}
                       </td>
 
                       {/* Company */}
@@ -89,10 +89,10 @@ export default function workingExperience() {
           </div>
         </ul>
         <p className="pt-5 text-[#EDEDED] mb-2">+ Enough in 2025 ?</p>
-        <p className="mb-2 text-zinc-400">
+        <p className="mb-2 text-zinc-400 max-lg:text-sm">
           Lemme show you me favorites tech for development
         </p>
-        <ul className="grid w-full grid-cols-4 gap-2 mb-2 text-[#FF9000]">
+        <ul className="grid w-full grid-cols-4 gap-2 mb-2 text-[#FF9000] max-lg:text-sm">
           <li className="flex items-center justify-center w-full col-span-1 px-5 py-1 text-center bg-zinc-800 ">
             + Next.js
           </li>
@@ -106,7 +106,7 @@ export default function workingExperience() {
             + Tailwind
           </li>
         </ul>
-        <ul className="grid w-full grid-cols-3 gap-2 text-[#FF9000]">
+        <ul className="grid w-full grid-cols-3 gap-2 text-[#FF9000] max-lg:text-sm">
           <li className="flex items-center justify-center w-full col-span-1 px-5 py-1 text-center bg-zinc-800 ">
             + SQL Server
           </li>
@@ -124,24 +124,24 @@ export default function workingExperience() {
 
 const chambadata = [
   {
-    year: "Freelance Frontend",
+    role: "Freelance Frontend",
 
     company: "Nuevamnt SAC",
-    period: "2021 - 2022",
+    period: "Jan 2024 - April 2024",
     tech: "React, Tailwind, Node, SQL",
     notes: "Worked on a landing page ",
   },
   {
-    year: "Fullstack lead",
+    role: "Fullstack lead",
     company: "Nuevamnt SAC",
-    period: "2021 - 2022",
+    period: "Nov 2022 - Aug 2023",
     tech: "React, Tailwind, Node, SQL",
     notes: "I built a web app for manage courses and students",
   },
   {
-    year: "Frontend Dev",
+    role: "Frontend Dev",
     company: "GS Agency",
-    period: "2022 - 2022",
+    period: "Sep 2022 - Oct 2022",
     tech: "React, Tailwind, Node, SQL",
     notes: "Worked on an internal web app for manage finances and sales",
   },

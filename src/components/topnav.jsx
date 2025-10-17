@@ -5,7 +5,7 @@ import { GiBootPrints } from "react-icons/gi";
 
 export default function Presentation() {
   return (
-    <div className="grid pt-14 gap-36">
+    <div className="grid pt-14 gap-36 max-lg:gap-20">
       <div className="flex gap-4 text-[#DDDDDD] ">
         <div className="w-4 gap-3 bg-white h-[1px]"></div>
         <div className="grid text-sm">
@@ -18,7 +18,7 @@ export default function Presentation() {
               maxIterations={30}
               sequential={"false"}
               characters="0$#45@M5>?/[]{}^*"
-              className=" text-[#DDDDDD] pt-5 revealed "
+              className=" text-[#DDDDDD] pt-5 revealed max-lg:text-xs "
               parentClassName="all-letters"
               encryptedClassName="encrypted"
             />
@@ -32,7 +32,7 @@ export default function Presentation() {
               maxIterations={30}
               sequential={"false"}
               characters="0$#45@M5>?/[]{}^*"
-              className=" text-[#DDDDDD] pt-5 revealed "
+              className=" text-[#DDDDDD] pt-5 revealed max-lg:text-xs"
               parentClassName="all-letters"
               encryptedClassName="encrypted"
             />
@@ -42,7 +42,7 @@ export default function Presentation() {
 
       <div className="">
         <div className="flex items-end gap-2">
-          <h1 className="tracking-[0.5rem] text-5xl text-[#DDDDDD] pt-5">
+          <h1 className="flex flex-col gap-2">
             <DecryptedText
               text="Hi, I am Saul"
               animateOn="view"
@@ -51,8 +51,7 @@ export default function Presentation() {
               maxIterations={30}
               sequential={"false"}
               characters="0$#45@M5>?/[]{}^*"
-              className="text-5xl text-[#DDDDDD] pt-5 revealed"
-              parentClassName="all-letters"
+              className="text-5xl text-[#DDDDDD] revealed max-lg:text-4xl tracking-[0.5rem] max-lg:tracking-[0.3rem]"
               encryptedClassName="encrypted"
             />
           </h1>
@@ -66,92 +65,41 @@ export default function Presentation() {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <div className=" w-full h-[1px] bg-[#DDDDDD]"></div>
+          <div className=" w-full h-[1px] bg-[#DDDDDD] "></div>
           <span className="text-[#AAAAAA] text-2xl">+-</span>
         </div>
-        <ul className="flex items-center gap-7  text-[#747474] mt-3 text-md">
-          <li className="flex items-center gap-1 hover:text-[#00DF82] cursor-pointer">
-            <p className="text-xl">
-              <IoHome />
-            </p>
-            <DecryptedText
-              text="[Home]"
-              animateOn="view"
-              revealDirection="start"
-              speed={40}
-              maxIterations={90}
-              sequential={"false"}
-              characters="0}^*"
-              parentClassName="all-letters"
-              encryptedClassName="encrypted"
-            />
-          </li>
-          <li className="flex items-center gap-1">
-            <p className="text-xl">
-              <IoSkull />
-            </p>
-            <DecryptedText
-              text="[Experience]"
-              animateOn="view"
-              revealDirection="start"
-              speed={40}
-              maxIterations={90}
-              sequential={"false"}
-              characters="0}^*"
-              parentClassName="all-letters"
-              encryptedClassName="encrypted"
-            />
-          </li>
-          <li className="flex items-center gap-1">
-            <p className="text-xl">
-              <FaBriefcase />
-            </p>
-            <DecryptedText
-              text="[Portfolio]"
-              animateOn="view"
-              revealDirection="start"
-              speed={40}
-              maxIterations={90}
-              sequential={"false"}
-              characters="0}^*"
-              parentClassName="all-letters"
-              encryptedClassName="encrypted"
-            />
-          </li>
-          <li className="flex items-center gap-1">
-            <p className="text-xl">
-              <GiBootPrints />
-            </p>
-            <DecryptedText
-              text="[Contact me]"
-              animateOn="view"
-              revealDirection="start"
-              speed={40}
-              maxIterations={90}
-              sequential={"false"}
-              characters="0}^*"
-              parentClassName="all-letters"
-              encryptedClassName="encrypted"
-            />
-          </li>
-          <li className="flex items-center gap-1">
-            <p className="text-xl">
-              <FaCamera />
-            </p>
-            <DecryptedText
-              text="[Misc]"
-              animateOn="view"
-              revealDirection="start"
-              speed={40}
-              maxIterations={90}
-              sequential={"false"}
-              characters="0}!!!!!%%1awdawdv12d12vd12d^*"
-              parentClassName="all-letters"
-              encryptedClassName="encrypted"
-            />
-          </li>
+        <ul className="flex items-center gap-4 text-[#747474] mt-3 text-md max-lg:hidden  ">
+          {navItems.map((item, index) => (
+            <li
+              key={index}
+              className="flex items-center gap-1 hover:text-[#00DF82] cursor-pointer "
+            >
+              <p className="text-xl group-hover:text-emerald-500">
+                {item.icon}
+              </p>
+              <DecryptedText
+                text={item.text}
+                animateOn="view"
+                revealDirection="start"
+                speed={40}
+                maxIterations={90}
+                className=""
+                sequential={"false"}
+                characters="0}^*"
+                parentClassName="all-letters"
+                encryptedClassName="encrypted"
+              />
+            </li>
+          ))}
         </ul>
       </div>
     </div>
   );
 }
+const navItems = [
+  { icon: <IoHome />, text: "[Home]" },
+  { icon: <IoSkull />, text: "[Experience]" },
+  { icon: <FaBriefcase />, text: "[Portfolio]" },
+  { icon: <GiBootPrints />, text: "[Contact me]" },
+  { icon: <FaCamera />, text: "[Misc]" },
+];

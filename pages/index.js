@@ -16,12 +16,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className="flex flex-col w-full ">
-        <div className="max-w-[1700px] w-[85%] m-auto max-lg:w-[90%]">
+        <div className="max-w-[1700px] w-[85%] m-auto max-lg:w-[90%] ">
           <Topnav />
 
-          <div className="grid grid-cols-12 mt-16 gap-x-20 gap-y-5 ">
+          <div className="grid w-full grid-cols-12 mt-16 gap-x-20 gap-y-5 max-lg:flex max-lg:flex-col">
             <Homeinfo />
             <Projects />
+
             <WorkingExerience />
             <Contact />
             <Misc />

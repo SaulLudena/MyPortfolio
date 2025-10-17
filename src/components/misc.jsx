@@ -16,63 +16,66 @@ export default function misc() {
       <div className="pt-4 ">
         <div>
           <p className="pb-2 text-[#EDEDED]">+ What i love of life</p>
-          <p className="mb-4 text-zinc-400">
-            When i was young i always was someone that never has an
-            understanding of how life works, a lot of things i had to learn to
-            be the man who i am now were necessary. Learning new things, getting
-            feedback from people and how to impove my work has gave sense to my
-            life
+          <p className="mb-4 text-zinc-400 max-lg:text-sm">
+            When I was younger, I never really understood how life worked. There
+            were so many things I had to learn to become the person I am today.
+            Learning new things, receiving feedback, and finding ways to improve
+            my work have given my life real meaning.
           </p>
         </div>
 
-        <ul class="grid grid-cols-3 gap-2 w-full  text-white mb-2">
-          <li class="bg-neutral-800 p-4 grid gap-5">
-            <div class="text-xs mb-1 flex items-center gap-1">
-              <span class="text-sm">+</span>
-            </div>
-            <div class="text-sm flex flex-col">
-              <span className="opacity-70">Favorite artist</span>
-              <span className="text-lg">WISP</span>
-            </div>
-          </li>
-
-          <li class="bg-neutral-800 p-4 grid gap-5">
-            <div class="text-xs mb-1 flex items-center gap-1">
-              <span class="text-sm">+</span>
-            </div>
-            <div class="text-sm flex flex-col">
-              <span className="opacity-70">Best feeling</span>
-              <span className="text-lg">NOSTALGIA</span>
-            </div>
-          </li>
-
-          <li class="bg-neutral-800 p-4 grid gap-5">
-            <div class="text-xs mb-1 flex items-center gap-1">
-              <span class="text-sm">+</span>
-            </div>
-            <div class="text-sm flex flex-col">
-              <span className="opacity-70">Hobby</span>
-              <span className="text-lg">LIFTING WEIGHTS</span>
-            </div>
-          </li>
+        <ul className="grid w-full grid-cols-3 gap-2 mb-2 text-white">
+          {infoItems.map((item, index) => (
+            <li key={index} className="grid gap-5 p-4 bg-neutral-800">
+              <div className="flex items-center gap-1 mb-1 text-xs">
+                <span className="text-sm">+</span>
+              </div>
+              <div className="flex flex-col text-sm">
+                <span className="opacity-70 max-lg:text-sm">{item.label}</span>
+                <span className="text-lg">{item.value}</span>
+              </div>
+            </li>
+          ))}
         </ul>
 
-        <ul class="grid grid-cols-2 gap-2 w-full  text-white">
-          <li class="bg-neutral-800 p-4 grid gap-5">
-            <div class="text-xs mb-1 flex items-center gap-1">
-              <span class="text-sm">+</span>
+        <ul className="grid w-full grid-cols-2 gap-2 text-white">
+          <li className="relative group">
+            <div className="absolute w-full h-full pointer-events-none">
+              <div className="h-[0.5px] bg-white w-0 group-hover:w-full transition-all duration-200 ease-in-out"></div>
+              <div className="w-[0.5px] h-0 bg-white group-hover:h-full transition-all duration-200 ease-in-out"></div>
             </div>
-            <div class="text-sm flex flex-col">
-              <span className="opacity-70">Favorite webpage</span>
-              <span className="text-lg">CLIC HERE</span>
+            <div className="absolute w-full h-full pointer-events-none">
+              {/* Línea vertical: de arriba hacia abajo */}
+              <div className="absolute bottom-0 right-0 w-[1px] h-0 bg-zinc-300 group-hover:h-full transition-all duration-500 ease-in-out"></div>
+
+              {/* Línea horizontal: de izquierda a derecha */}
+              <div className="absolute bottom-0 right-0 h-[1px] w-0 bg-white group-hover:w-full transition-all duration-500 ease-in-out"></div>
             </div>
+            <div className="absolute w-full h-full pointer-events-none">
+              {/* Línea vertical: de arriba hacia abajo */}
+              <div className=" absolute left-8 top-[1.6rem] w-0 h-[1px] bg-white group-hover:w-52 transition-all duration-500 ease-in-out"></div>
+            </div>
+            <a
+              href="https://musicforprogramming.net/latest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="grid gap-5 p-4 bg-neutral-800"
+            >
+              <div className="flex items-center gap-1 mb-1 text-xs">
+                <span className="text-sm">+</span>
+              </div>
+              <div className="flex flex-col text-sm">
+                <span className="opacity-70">Favorite webpage</span>
+                <span className="text-lg">CLICK HERE</span>
+              </div>
+            </a>
           </li>
 
-          <li class="bg-neutral-800 p-4 grid gap-5">
-            <div class="text-xs mb-1 flex items-center gap-1">
-              <span class="text-sm">+</span>
+          <li className="grid gap-5 p-4 bg-neutral-800">
+            <div className="flex items-center gap-1 mb-1 text-xs">
+              <span className="text-sm">+</span>
             </div>
-            <div class="text-sm flex flex-col">
+            <div className="flex flex-col text-sm">
               <span className="opacity-70">Favorite music gender</span>
               <span className="text-lg">MATH ROCK</span>
             </div>
@@ -85,7 +88,7 @@ export default function misc() {
         <div className="grid text-sm">
           <span>
             <DecryptedText
-              text="[ 00.00_alpha ]"
+              text="[ 00.00_alpha_end ]"
               animateOn="view"
               revealDirection="start"
               speed={50}
@@ -99,7 +102,7 @@ export default function misc() {
           </span>
           <span>
             <DecryptedText
-              text="[ 127.0.0.1_alpha ]"
+              text="[ 127.0.0.1_alpha_end ]"
               animateOn="view"
               revealDirection="start"
               speed={50}
@@ -116,3 +119,9 @@ export default function misc() {
     </div>
   );
 }
+
+const infoItems = [
+  { label: "Favorite artist", value: "WISP" },
+  { label: "Best feeling", value: "NOSTALGIA" },
+  { label: "Hobby", value: "LIFTING WEIGHTS" },
+];

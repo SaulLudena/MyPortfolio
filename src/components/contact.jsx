@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="pt-4 ">
         <div>
           <p className="pb-2 text-[#EDEDED]">+ I know a man who...</p>
-          <p className="text-zinc-400">
+          <p className="text-zinc-400 max-lg:text-sm">
             Some call him Saul — a developer who turns complex ideas into
             seamless digital experiences. Reach out, and maybe we’ll build
             something remarkable.
@@ -37,7 +37,7 @@ export default function Contact() {
                   href={link}
                   target={isGmail ? "_self" : "_blank"}
                   rel="noopener noreferrer"
-                  className="w-full p-10 text-lg text-center "
+                  className="w-full p-10 text-lg text-center max-lg:text-sm"
                 >
                   {item.data}
                 </a>

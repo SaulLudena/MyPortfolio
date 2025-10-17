@@ -2,7 +2,7 @@ import { IoHome } from "react-icons/io5";
 
 export default function Home() {
   return (
-    <div className="col-span-6 text-white max-xl:col-span-12">
+    <div className="w-full col-span-6 text-white max-xl:col-span-12 max-lg:col-span-auto">
       <div className="grid gap-2 ">
         <h1 className="text-[#00DF82] flex items-center gap-2">
           <IoHome />
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="pt-4 ">
         <div>
           <p className="pb-2 text-[#EDEDED]">+ Overview</p>
-          <p className="text-zinc-400">
+          <span className="text-zinc-400 max-lg:text-sm">
             Hi, I’m{" "}
             <span className="border-b border-b-[#00DF82] text-[#00DF82] ">
               Saul
@@ -35,10 +35,10 @@ export default function Home() {
               </span>
             </span>
             design.
-          </p>
+          </span>
         </div>
         <p className="pt-5 pb-2 text-[#EDEDED]">+ Facts</p>
-        <ul className="grid w-full gap-2">
+        <ul className="grid w-full gap-2 max-lg:text-sm">
           {aboutmedata.map((item, index) => (
             <li key={index} className="flex items-center justify-between">
               <span className="px-2 py-1 text-white bg-zinc-800">
