@@ -8,7 +8,7 @@ export default function projectItems({ index, item }) {
     >
       <div className="flex flex-col col-span-10 p-4 max-lg:w-full">
         <span className="flex items-center gap-2 px-2 py-1 text-white">
-          <span className="w-2 h-2 rounded-full  bg-[#FF5053]"></span>
+          <span className="text-[#FF5053]">+</span>
           <span className="text-lg max-lg:text-md">{item.projectName}</span>
         </span>
         <span className="px-2 py-1 text-[#A7A7A7]  w-[80%] max-lg:text-sm">

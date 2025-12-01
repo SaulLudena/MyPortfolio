@@ -3,7 +3,7 @@ import { IoSkull } from "react-icons/io5";
 
 export default function workingExperience() {
   return (
-    <div className="col-span-6 text-white max-xl:col-span-12">
+    <div className="col-span-12 text-white max-xl:col-span-12">
       <div className="grid gap-2">
         <h1 className="text-[#FF9000] flex items-center gap-2">
           <IoSkull />
@@ -31,7 +31,7 @@ export default function workingExperience() {
                   <th scope="col" className="pb-2 font-light">
                     Company
                   </th>
-                  <th scope="col" className="pb-2 font-light">
+                  <th scope="col" className="pb-2 font-light max-md:hidden">
                     Period
                   </th>
                   <th scope="col" className="pb-2 font-light">
@@ -68,7 +68,7 @@ export default function workingExperience() {
                       </td>
 
                       {/* Period */}
-                      <td className="p-3 border-b border-r border-zinc-700 whitespace-nowrap">
+                      <td className="p-3 border-b border-r border-zinc-700 whitespace-nowrap max-md:hidden">
                         {item.period}
                       </td>
 

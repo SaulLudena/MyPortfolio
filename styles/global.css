@@ -26,3 +26,16 @@ body {
 body {
   background-color: #0d0d0d;
 }
+
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in-delayed {
+  animation: fadeInDelayed 0.8s ease forwards;
+  animation-delay: 1s; /* <-- 1 segundo */
+}

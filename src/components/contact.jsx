@@ -2,7 +2,7 @@ import { GiBootPrints } from "react-icons/gi";
 export default function Contact() {
   const bgColors = ["#222222", "#2B2B2B", "#383838"];
   return (
-    <div className="col-span-6 text-white max-xl:col-span-12 max-xl:mb-8 ">
+    <div className="col-span-12 text-white max-xl:col-span-12 max-xl:mb-8 ">
       <div className="grid gap-2 ">
         <h1 className="text-[#1DFFD2] flex items-center gap-2">
           <GiBootPrints />
