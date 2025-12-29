@@ -128,14 +128,14 @@ const chambadata = [
 
     company: "Nuevamnt SAC",
     period: "Jan 2024 - April 2024",
-    tech: "React, Tailwind, Node, SQL",
+    tech: "React, Tailwind, Swiper.js",
     notes: "Worked on a landing page ",
   },
   {
     role: "Fullstack lead",
     company: "Nuevamnt SAC",
     period: "Nov 2022 - Aug 2023",
-    tech: "React, Tailwind, Node, SQL",
+    tech: "NextJs, ExpressJs , Tailwind, SQL",
     notes: "I built a web app for manage courses and students",
   },
   {

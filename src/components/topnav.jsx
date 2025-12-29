@@ -129,9 +129,7 @@ export default function Presentation() {
               key={index}
               className="flex items-center gap-1 hover:text-[#00DF82] cursor-pointer "
             >
-              <p className="text-xl group-hover:text-emerald-500">
-                {item.icon}
-              </p>
+              <p className="text-xl group-hover:text-[#00DF82]">{item.icon}</p>
               <DecryptedText
                 text={item.text}
                 animateOn="view"
@@ -152,9 +150,9 @@ export default function Presentation() {
   );
 }
 const navItems = [
-  { icon: <IoHome />, text: "[Home]" },
-  { icon: <IoSkull />, text: "[Experience]" },
-  { icon: <FaBriefcase />, text: "[Portfolio]" },
-  { icon: <GiBootPrints />, text: "[Contact me]" },
+  { icon: <IoHome />, text: "[Home]", color: "#00DF82" },
+  { icon: <IoSkull />, text: "[Experience]", color: "#FF9000" },
+  { icon: <FaBriefcase />, text: "[Portfolio]", color: "#FF5053" },
+  { icon: <GiBootPrints />, text: "[Contact me]", color: "#1DFFD2" },
   { icon: <FaCamera />, text: "[Misc]" },
 ];

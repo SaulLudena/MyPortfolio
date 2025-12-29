@@ -31,13 +31,13 @@ export default function Contact() {
               <li
                 key={index}
                 style={{ backgroundColor: bgColors[index % bgColors.length] }}
-                className="flex items-center justify-center "
+                className="flex items-center justify-center hover:bg-zinc-900 transition"
               >
                 <a
                   href={link}
                   target={isGmail ? "_self" : "_blank"}
                   rel="noopener noreferrer"
-                  className="w-full p-10 text-lg text-center max-lg:text-sm"
+                  className="w-full p-10 text-lg text-center max-lg:text-sm text-[#1DFFD2]"
                 >
                   {item.data}
                 </a>

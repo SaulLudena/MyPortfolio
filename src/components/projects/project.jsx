@@ -33,10 +33,10 @@ const aboutmedata = [
     urldemo: "https://moshonku.vercel.app",
   },
   {
-    projectName: "Shipunk",
-    description: "Wiki for everything about cyberpunk edgerunners",
-    repo: "https://github.com/SaulLudena/shipunk",
-    urldemo: "https://shipunk.vercel.app",
+    projectName: "LostTime.miss",
+    description: "Save and found your best moments",
+    repo: "https://github.com/SaulLudena/losttime",
+    urldemo: "https://losttime.vercel.app",
   },
   {
     projectName: "Nuevamente",
